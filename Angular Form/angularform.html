@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="">
+        <p>Name: <input type="text" ng-model="name"></p>
+        <p>Father name: <input type="text" ng-model="fathername"></p>
+        <p>NIC: <input type="text" ng-model="nic"/></p>
+        <p>Mobile: <input type="text" ng-model="mobile"></p>
+        <p>Email: <input type="text" ng-model="email"></p>
+        <p>Address: <textarea ng-model="address" cols="30" rows="3"></textarea></p>
+        <ol>
+            <li>Name: <span ng-bind="name"></span></li>
+            <li>Father name: <span ng-bind="fathername"></span></li>
+            <li>NIC: <span ng-bind="nic"></span></li>
+            <li>Mobile: <span ng-bind="mobile"></span></li>
+            <li>Email: <span ng-bind="email"></span></li>
+            <li>Address: <span ng-bind="address"></span></li>
+        </ol>
+    </div>
+</body>
+</html>
